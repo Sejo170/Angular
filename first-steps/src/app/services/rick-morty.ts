@@ -11,7 +11,7 @@ export class RickMorty {
 
   constructor(private http: HttpClient) {}
 
-  getCharacters(): Observable<InfoApiRM> {
-    return this.http.get<InfoApiRM>(this.URI);
+  getCharacters(page: number = 1): Observable<InfoApiRM> {
+    return this.http.get<InfoApiRM>(`${this.URI}?page=${page}`);
   }
 }
