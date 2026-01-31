@@ -1,7 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Daum } from '../common/agentsinterface';
+import { Root } from '../common/agentsinterface';
+
 
 
 @Injectable({
@@ -12,7 +13,7 @@ export class ValorantAgents {
 
   constructor(private http: HttpClient) { }
 
-  public getData(): Observable<Daum> {
-    return this.http.get<Daum>(this.URI);
+  getAgents(): Observable<Root> {
+    return this.http.get<Root>(this.URI);
   }
 }
