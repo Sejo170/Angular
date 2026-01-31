@@ -11,6 +11,7 @@ import { Info } from './components/info/info';
 import { Navbar } from './components/navbar/navbar';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { InfoValorant } from './components/info-valorant/info-valorant';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { FormsModule } from '@angular/forms';
     Footer,
     Home,
     Info,
+    InfoValorant,
     Navbar
   ],
   imports: [

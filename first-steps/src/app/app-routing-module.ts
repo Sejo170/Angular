@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { Home } from './components/home/home';
 import { Error } from './components/error/error';
 import { Info } from './components/info/info';
+import { InfoValorant } from './components/info-valorant/info-valorant';
 
 const routes: Routes = [
   {
@@ -17,6 +18,10 @@ const routes: Routes = [
   {
     path: 'info',
     component: Info
+  },
+  {
+    path: 'info-valorant',
+    component: InfoValorant
   },
   {
     path: '**',
