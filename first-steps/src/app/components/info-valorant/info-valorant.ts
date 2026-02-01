@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ValorantAgents } from '../../services/valorant-agents';
-import { Daum, Root } from '../../common/agentsinterface';
+import { Ability, Daum, Role, Root } from '../../common/agentsinterface';
 
 @Component({
   selector: 'app-info-valorant',
@@ -8,9 +8,11 @@ import { Daum, Root } from '../../common/agentsinterface';
   templateUrl: './info-valorant.html',
   styleUrl: './info-valorant.css',
 })
-export class InfoValorant {
+export class InfoValorant implements OnInit {
   dataApi!: Root;
   agents: Daum[] = [];
+  role!: Role;
+  abilities: Ability[] = [];
 
   constructor(private vlservice: ValorantAgents) { }
 
