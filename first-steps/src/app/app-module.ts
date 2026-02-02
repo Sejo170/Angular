@@ -12,6 +12,7 @@ import { Navbar } from './components/navbar/navbar';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { InfoValorant } from './components/info-valorant/info-valorant';
+import { InfoDisney } from './components/info-disney/info-disney';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { InfoValorant } from './components/info-valorant/info-valorant';
     Home,
     Info,
     InfoValorant,
-    Navbar
+    Navbar,
+    InfoDisney
   ],
   imports: [
     BrowserModule,

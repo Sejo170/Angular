@@ -13,6 +13,7 @@ export class InfoValorant implements OnInit {
   agents: Daum[] = [];
   role!: Role;
   abilities: Ability[] = [];
+  activeIndex: number | null = null;
 
   constructor(private vlservice: ValorantAgents) { }
 
@@ -21,9 +22,21 @@ export class InfoValorant implements OnInit {
   }
 
   private loadAgents() {
-    this.vlservice.getAgents().subscribe( agents => {
-      this.agents = agents.data;
-      console.log(this.agents);
-    })
+    this.vlservice.getAgents().subscribe({
+      next: value => {
+        this.dataApi = value;
+        this.agents = this.dataApi.data;
+      },
+      error: err => {
+        console.log(err);
+      },
+      complete: () => {
+        console.log("Done");
+      }
+    });
+  }
+
+  toggleAccordion(index:number){
+    this.activeIndex = this.activeIndex === index ? null : index;
   }
 }

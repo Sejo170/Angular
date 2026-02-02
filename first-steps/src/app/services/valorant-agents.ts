@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Root } from '../common/agentsinterface';
+import { Ability, Root } from '../common/agentsinterface';
 
 
 
@@ -16,4 +16,7 @@ export class ValorantAgents {
   getAgents(): Observable<Root> {
     return this.http.get<Root>(this.URI);
   }
+  // getAbilities(): Observable<Ability> {
+  //   return this.http.get<Ability>(this.URI);
+  // }
 }

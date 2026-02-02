@@ -4,6 +4,7 @@ import { Home } from './components/home/home';
 import { Error } from './components/error/error';
 import { Info } from './components/info/info';
 import { InfoValorant } from './components/info-valorant/info-valorant';
+import { InfoDisney } from './components/info-disney/info-disney';
 
 const routes: Routes = [
   {
@@ -22,6 +23,10 @@ const routes: Routes = [
   {
     path: 'info-valorant',
     component: InfoValorant
+  },
+  {
+    path: 'info-disney',
+    component: InfoDisney
   },
   {
     path: '**',
