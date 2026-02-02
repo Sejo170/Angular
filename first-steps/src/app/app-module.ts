@@ -13,6 +13,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { InfoValorant } from './components/info-valorant/info-valorant';
 import { InfoDisney } from './components/info-disney/info-disney';
+import { InfoFinalspace } from './components/info-finalspace/info-finalspace';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { InfoDisney } from './components/info-disney/info-disney';
     Info,
     InfoValorant,
     Navbar,
-    InfoDisney
+    InfoDisney,
+    InfoFinalspace
   ],
   imports: [
     BrowserModule,
