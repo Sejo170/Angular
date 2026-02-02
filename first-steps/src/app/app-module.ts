@@ -14,6 +14,7 @@ import { FormsModule } from '@angular/forms';
 import { InfoValorant } from './components/info-valorant/info-valorant';
 import { InfoDisney } from './components/info-disney/info-disney';
 import { InfoFinalspace } from './components/info-finalspace/info-finalspace';
+import { InfoDisney2 } from './components/info-disney2/info-disney2';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { InfoFinalspace } from './components/info-finalspace/info-finalspace';
     InfoValorant,
     Navbar,
     InfoDisney,
-    InfoFinalspace
+    InfoFinalspace,
+    InfoDisney2
   ],
   imports: [
     BrowserModule,

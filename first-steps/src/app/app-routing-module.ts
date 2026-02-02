@@ -6,6 +6,7 @@ import { Info } from './components/info/info';
 import { InfoValorant } from './components/info-valorant/info-valorant';
 import { InfoDisney } from './components/info-disney/info-disney';
 import { InfoFinalspace } from './components/info-finalspace/info-finalspace';
+import { InfoDisney2 } from './components/info-disney2/info-disney2';
 
 const routes: Routes = [
   {
@@ -32,6 +33,10 @@ const routes: Routes = [
   {
     path: 'info-finalspace',
     component: InfoFinalspace
+  },
+  {
+    path: 'info-disney2',
+    component: InfoDisney2
   },
   {
     path: '**',
