@@ -1,15 +1,13 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Ability, Root } from '../common/agentsinterface';
-
-
+import { Root } from '../common/valointerface';
 
 @Injectable({
   providedIn: 'root',
 })
-export class ValorantAgents {
-  private URI:string = "https://valorant-api.com/v1/agents";
+export class Valo {
+  private URI:string = "https://valorant-api.com/v1/agents/";
 
   constructor(private http: HttpClient) { }
 
