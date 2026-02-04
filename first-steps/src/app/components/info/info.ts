@@ -17,6 +17,14 @@ export class Info implements OnInit {
   totalPages: number = 0;
   pageToGo: number = 1;
 
+  // npm create vite
+  // npm run dev
+  // ng version
+  // ng new nombre-proyecto --routing --standalone=false
+  // ng g c components/info o otra cosa --skip-tests
+  // ng g i common/disneyinterface
+  // ng g s services/disney
+  // ng serve -o
   constructor(private rmservice: RickMorty) { }
   
   ngOnInit(): void {
