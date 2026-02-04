@@ -1,0 +1,37 @@
+<div class="content" *ngIf="dataApi">
+    <div id="header">
+        <h1>Dragon Ball Character List</h1>
+        <div class="pagination">
+            <button (click)="first()" [disabled]="currentPage === 1">First</button>
+            <button (click)="prevPage()" [disabled]="currentPage === 1">Previous</button>
+            <span>Page {{currentPage}} / {{totalPages}}</span>
+            <button (click)="nextPage()" [disabled]="currentPage === totalPages">Next</button>
+            <button (click)="last()" [disabled]="currentPage === totalPages">Last</button><br><br>
+            Go to <input type="number" [(ngModel)]="pageToGo"><button (click)="goToPage(pageToGo)">Go To Page</button>
+            Limit Characters <input type="number" [(ngModel)]="limitForPage"><button (click)="limitInPage(limitForPage)">Limit In Page</button>
+        </div>
+        <br>
+        Race Character: <input type="text" [(ngModel)]="charRace">
+        <button (click)="filterByRace()">Filter by race</button>
+        <button (click)="resetFilter()">Reset filter</button>
+        <br><br>
+        <button (click)="sortByNameAs()">Sort By Name Ascendent</button>
+        <button (click)="sortByNameDes()">Sort By Name Descendent</button>
+
+    </div>
+    <div class="card" *ngFor="let char of characters; index as i">
+        <div class="card-header">
+            <h3>{{char.name}}</h3>
+        </div>
+        <img [src]="char.image" [title]="char.name">
+        <p><b>Race: </b>{{char.race}}</p>
+        <p><b>Ki: </b>{{char.ki}}</p>
+        <p><b>Max Ki: </b>{{char.maxKi}}</p>
+
+        <button (click)="toggleAccordion(i)">Affiliation</button>
+
+        <div *ngIf="activeIndex === i" class="accordion-content">
+            <p>{{char.affiliation}}</p>
+        </div>
+    </div>
+</div>

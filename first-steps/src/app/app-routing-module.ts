@@ -8,6 +8,7 @@ import { InfoDisney } from './components/info-disney/info-disney';
 import { InfoFinalspace } from './components/info-finalspace/info-finalspace';
 import { InfoDisney2 } from './components/info-disney2/info-disney2';
 import { InfoValo } from './components/info-valo/info-valo';
+import { InfoDragonball } from './components/info-dragonball/info-dragonball';
 
 const routes: Routes = [
   {
@@ -42,6 +43,10 @@ const routes: Routes = [
   {
     path: 'info-valo',
     component: InfoValo
+  },
+  {
+    path: 'info-dragonball',
+    component: InfoDragonball
   },
   {
     path: '**',

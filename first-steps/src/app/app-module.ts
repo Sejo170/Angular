@@ -16,6 +16,7 @@ import { InfoDisney } from './components/info-disney/info-disney';
 import { InfoFinalspace } from './components/info-finalspace/info-finalspace';
 import { InfoDisney2 } from './components/info-disney2/info-disney2';
 import { InfoValo } from './components/info-valo/info-valo';
+import { InfoDragonball } from './components/info-dragonball/info-dragonball';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { InfoValo } from './components/info-valo/info-valo';
     InfoDisney,
     InfoFinalspace,
     InfoDisney2,
-    InfoValo
+    InfoValo,
+    InfoDragonball
   ],
   imports: [
     BrowserModule,
