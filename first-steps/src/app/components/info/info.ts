@@ -17,6 +17,7 @@ export class Info implements OnInit {
   totalPages: number = 0;
   pageToGo: number = 1;
 
+  // npm install
   // npm create vite
   // npm run dev
   // ng version
